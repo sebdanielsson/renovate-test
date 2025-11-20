@@ -27,3 +27,5 @@ jobs:
           git config --global user.email 'bot@renovateapp.com'
           git config --global user.name 'Renovate Bot'
           npx renovate
+        env:
+          RENOVATE_TOKEN: ${{ secrets.GITHUB_COM_TOKEN }}
